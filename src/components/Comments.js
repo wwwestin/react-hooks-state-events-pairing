@@ -1,4 +1,14 @@
-// import React from "react";
-// import React, { useState } from "react";
+import LikeButtons from "./LikeButtons";
 
-//export default Comments;
+function Comments({comment}){
+    return (
+        <div>
+            <h3>{comment.user}</h3>
+            <div>{comment.comment}</div>
+
+            <LikeButtons upvotes = {0} downvotes ={0} />
+        </div>
+    )
+}
+
+export default Comments;
